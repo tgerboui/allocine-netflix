@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "Note Allociné sur Netflix",
+	"description": "Permet de visualiser la note moyenne des spéctateurs Allociné sur Netflix",
+	"version": "0.1",
+	"icons": {
+		"128": "128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.netflix.com/*",
+				"http://www.allocine.fr/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	],
+	"permissions": [
+		"https://www.netflix.com/*",
+		"http://www.allocine.fr/*"
+	],
+
+
+	"author": "Thomas Gerbouin"
+}
